@@ -1,0 +1,30 @@
+.services {
+  margin-bottom: $section-margin-bottom;
+  background: url('../../assets/images/decor/pluses-decor.svg') no-repeat 95% 0%;
+
+  &__header {
+    margin-bottom: 5.125rem;
+    text-align: center;
+  }
+
+  &__title {
+    @include section-title;
+  }
+
+  &__subtitle {
+    @include section-subtitle;
+    text-transform: uppercase;
+  }
+
+  &__cards {
+    @include flex-justify-between;
+  }
+
+  @media (max-width: 992px) {
+    &__cards {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 55px 0;
+    }
+  }
+}

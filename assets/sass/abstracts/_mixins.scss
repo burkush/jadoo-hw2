@@ -1,0 +1,39 @@
+@mixin flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin section-title {
+  font-family: 'Volkhov', serif;
+  font-weight: 700;
+  font-size: 3.125rem;
+  line-height: 4rem;
+  text-transform: capitalize;
+  color: $section-title-color;
+}
+
+@mixin section-subtitle {
+  margin-bottom: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  color: $purple;
+}

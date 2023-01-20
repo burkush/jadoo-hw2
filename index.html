@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jadoo is a website for tourists and people who love travelling">
+  <meta name="keywords" content="Jadoo, trip, vacation, travelling, aviation">
+  <title>Jadoo</title>
+  <link rel="stylesheet" href="./dist/css/main.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container">
+
+      <a href="#" class="header__logo">
+        <img src="./assets/images/logo.svg" alt="Logo">
+      </a>
+
+      <!-- mobile navigation toggle: visible only on small screens -->
+      <input type="checkbox" class="header__toggle" id="toggle-mobile">
+      <label for="toggle-mobile" class="header__navicon">
+        <span class="header__burger"></span>
+      </label>
+
+      <nav class="header__nav">
+        <ul class="header__navlist">
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Hotels</a></li>
+          <li><a href="#">Flights</a></li>
+          <li><a href="#">Bookings</a></li>
+        </ul>
+
+        <div class="header__actions">
+          <a href="#" class="header__login">Login</a>
+          <a href="#" class="header__signup">Sign up</a>
+          <select name="language-picker" id="language-picker" class="header__language">
+            <option value="en" selected>EN</option>
+            <option value="uk">UK</option>
+          </select>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="./assets/images/icons/plane.svg" alt="Flying airplane" class="hero__airplane">
+      <div class="hero__container container">
+        <div class="hero__content">
+          <h1 class="hero__title">Best destinations around the world</h1>
+          <h2 class="hero__subtitle">Travel, enjoy and live a new and full life</h2>
+          <p class="hero__text">
+            Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening.
+            Park gate sell they west hard for the.
+          </p>
+          <div class="hero__links">
+            <a href="#" class="hero__cta cta">Find out more</a>
+            <a href="#" class="hero__play-demo">
+              <div class="hero__play-btn">
+                <img src="./assets/images/icons/play-btn.svg" alt="Play button">
+              </div>
+              <p>Play Demo</p>
+            </a>
+          </div>
+        </div>
+
+        <img src="./assets/images/content/traveller-girl.png" alt="Traveller girl" class="hero__image">
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="services__container container">
+        <div class="services__header">
+          <h3 class="services__subtitle">Category</h3>
+          <h2 class="services__title">We Offer Best Services</h2>
+        </div>
+        <div class="services__cards">
+          <div class="icon-card">
+            <img src="./assets/images/icons/antenna.svg" alt="Antenna" class="icon-card__image">
+            <h4 class="icon-card__title">Calculated Weather</h4>
+            <p class="icon-card__text">Built Wicket longer admire do barton vanity itself do in it.</p>
+          </div>
+          <div class="icon-card">
+            <img src="./assets/images/icons/plane-with-bg.svg" alt="Airplane" class="icon-card__image">
+            <h4 class="icon-card__title">Best Flights</h4>
+            <p class="icon-card__text">Engrossed listening. Park gate sell they west hard for the.</p>
+          </div>
+          <div class="icon-card">
+            <img src="./assets/images/icons/mic.svg" alt="Microphone" class="icon-card__image">
+            <h4 class="icon-card__title">Local Events</h4>
+            <p class="icon-card__text">Barton vanity itself do in it. Prefer to men it engrossed listening.</p>
+          </div>
+          <div class="icon-card">
+            <img src="./assets/images/icons/gear.svg" alt="Gear" class="icon-card__image">
+            <h4 class="icon-card__title">Customization</h4>
+            <p class="icon-card__text">We deliver outsourced aviation services for military customers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="destinations">
+      <div class="destinations__container container">
+        <div class="destinations__header">
+          <h3 class="destinations__subtitle">Top Selling</h3>
+          <h2 class="destinations__title">Top Destinations</h2>
+        </div>
+        <div class="destinations__cards">
+          <div class="image-card">
+            <div class="image-card__header">
+              <img src="./assets/images/content/rome.png" alt="Rome">
+            </div>
+            <div class="image-card__info">
+              <div class="details">
+                <span class="location">Rome, Italy</span>
+                <span class="price">$5,42k</span>
+              </div>
+              <div class="duration">
+                <img src="./assets/images/icons/black-paper-plane.svg" alt="Paper plane">
+                <span class="time">10 Days Trip</span>
+              </div>
+            </div>
+          </div>
+          <div class="image-card">
+            <div class="image-card__header">
+              <img src="./assets/images/content/london.png" alt="London">
+            </div>
+            <div class="image-card__info">
+              <div class="details">
+                <span class="location">London, UK</span>
+                <span class="price">$4.2k</span>
+              </div>
+              <div class="duration">
+                <img src="./assets/images/icons/black-paper-plane.svg" alt="Paper plane">
+                <span class="time">12 Days Trip</span>
+              </div>
+            </div>
+          </div>
+          <div class="image-card">
+            <div class="image-card__header">
+              <img src="./assets/images/content/europe.png" alt="Europe">
+            </div>
+            <div class="image-card__info">
+              <div class="details">
+                <span class="location">Full Europe</span>
+                <span class="price">$15k</span>
+              </div>
+              <div class="duration">
+                <img src="./assets/images/icons/black-paper-plane.svg" alt="Paper plane">
+                <span class="time">28 Days Trip</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trip">
+      <div class="trip__container container">
+        <div class="trip__content">
+          <div class="trip__header">
+            <h3 class="trip__subtitle">Easy and Fast</h3>
+            <h2 class="trip__title">Book your next trip in 3 easy steps</h2>
+          </div>
+          <ul class="trip__list">
+            <li class="trip__list-item">
+              <img src="./assets/images/icons/yellow-box.svg" alt="Yellow box">
+              <div class="trip__list-content">
+                <h4 class="trip__list-title">Choose Destination</h4>
+                <p class="trip__list-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
+                </p>
+              </div>
+            </li>
+            <li class="trip__list-item">
+              <img src="./assets/images/icons/red-swimmer.svg" alt="Red swimmer">
+              <div class="trip__list-content">
+                <h4 class="trip__list-title">Make Payment</h4>
+                <p class="trip__list-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
+                </p>
+              </div>
+            </li>
+            <li class="trip__list-item">
+              <img src="./assets/images/icons/blue-car.svg" alt="Blue car">
+              <div class="trip__list-content">
+                <h4 class="trip__list-title">Reach Airport on Selected Date</h4>
+                <p class="trip__list-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="trip__card-container">
+          <div class="trip__card-background"></div>
+
+          <div class="trip-widget">
+            <img src="./assets/images/content/girl-greece.png" alt="Girl in Greece">
+
+            <div class="trip-widget__content">
+              <h5 class="trip-widget__title">Trip To Greece</h5>
+              <div class="trip-widget__details">
+                <div class="trip-widget__date">14-29 June</div>
+                <div class="trip-widget__author">by Robbin Joseph</div>
+              </div>
+              <div class="trip-widget__icons">
+                <img src="./assets/images/icons/greece-leaf.svg" alt="Leaf icon">
+                <img src="./assets/images/icons/greece-map.svg" alt="Map icon">
+                <img src="./assets/images/icons/greece-send.svg" alt="Icon send">
+              </div>
+              <div class="trip-widget__info">
+                <div class="trip-widget__participants">
+                  <img src="./assets/images/icons/greece-building.svg" alt="Icon building">
+                  <span>24 people going</span>
+                </div>
+
+                <img src="./assets/images/icons/greece-heart.svg" alt="Heart icon" class="trip-widget__like">
+              </div>
+            </div>
+
+            <div class="trip-widget__ongoing">
+              <img src="./assets/images/content/greece-avatar.png" alt="Greece avatar">
+
+              <div class="ongoing-content">
+                <p class="status">Ongoing</p>
+                <h4 class="title">Trip to Rome</h4>
+                <p class="completed">
+                  <span class="progress">40%</span>
+                  completed
+                </p>
+                <img src="./assets/images/icons/greece-progress-bar.svg" alt="Progress bar">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="testimonials__container container">
+        <div class="testimonials__flex">
+          <div class="testimonials__content">
+            <h3 class="testimonials__subtitle">Testimonials</h3>
+            <h2 class="testimonials__title">What people say about us.</h2>
+          </div>
+
+          <div class="testimonials__card-container">
+            <div class="testimonials__card">
+              <img src="./assets/images/content/smiling-man.png" alt="Smiling man testimonial">
+              <p class="testimonials__text">
+                “On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew
+                next.
+                Of believed or diverted no.”
+              </p>
+              <div class="testimonials__info">
+                <h3 class="testimonials__author">Mike Taylor</h3>
+                <h5 class="testimonials__location">Lahore, Pakistan</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials__partners">
+          <img src="./assets/images/testimonials/axon.png" alt="Axon">
+          <img src="./assets/images/testimonials/jetstar.png" alt="Jetstar">
+          <img src="./assets/images/testimonials/expedia.png" alt="Expedia">
+          <img src="./assets/images/testimonials/qantas.png" alt="Qantas">
+          <img src="./assets/images/testimonials/alitalia.png" alt="Alitalia">
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe">
+      <div class="subscribe__container container">
+        <div class="subscribe__content">
+          <h2 class="subscribe__title">
+            Subscribe to get information, latest news and other interesting offers about Cobham
+          </h2>
+          <form action="#" class="subscribe__form">
+            <div class="subscribe__input-container">
+              <img src="./assets/images/icons/mail-icon.svg" alt="Mail icon" class="subscribe__icon">
+              <input type="email" name="email" class="subscribe__input" placeholder="Your email" required>
+            </div>
+            <button type="submit" class="subscribe__submit">Subscribe</button>
+          </form>
+          <img src="./assets/images/icons/paper-plane.svg" alt="Paper plane send icon" class="subscribe__plane-icon">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__content">
+        <div class="footer__logo-container">
+          <a href="#" class="footer__logo">Jadoo.</a>
+          <p class="footer__motto">
+            Book your trip in minute, get full Control for much longer.
+          </p>
+        </div>
+
+        <nav class="footer__nav">
+          <div class="footer__nav-item">
+            <h2 class="footer__nav-title">Company</h2>
+            <ul class="footer__nav-list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Mobile</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__nav-item">
+            <h2 class="footer__nav-title">Contact</h2>
+            <ul class="footer__nav-list">
+              <li><a href="#">Help / FAQ</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Affiliates</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__nav-item">
+            <h2 class="footer__nav-title">More</h2>
+            <ul class="footer__nav-list">
+              <li><a href="#">Airline fees</a></li>
+              <li><a href="#">Airline</a></li>
+              <li><a href="#">Low fare tips</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="footer__links">
+          <div class="footer__social">
+            <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+              <img src="./assets/images/icons/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+              <img src="./assets/images/icons/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+              <img src="./assets/images/icons/twitter.svg" alt="Twitter">
+            </a>
+          </div>
+
+          <div class="footer__download">
+            <h2 class="footer__download-title">Discover our app</h2>
+            <div class="footer__download-links">
+              <a href="https://play.google.com/store/apps" target="_blank">
+                <img src="./assets/images/icons/google-play.svg" alt="Google Play">
+              </a>
+              <a href="https://www.apple.com/app-store/" target="_blank">
+                <img src="./assets/images/icons/app-store.svg" alt="App Store">
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="footer__copyright">All rights reserved @jadoo.co</p>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+.trip-widget {
+  position: relative;
+  padding: 1.25rem 1.5625rem;
+  background-color: #fff;
+  box-shadow: $main-box-shadow;
+  border-radius: 26px;
+
+  & > img {
+    margin-bottom: 1.5rem;
+  }
+
+  &__title {
+    margin-bottom: 0.75rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    letter-spacing: 0.015em;
+    color: $trip-widget-black;
+  }
+
+  &__details {
+    margin-bottom: 0.75rem;
+    display: flex;
+  }
+
+  &__date,
+  &__author {
+    padding: 0 0.75rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    letter-spacing: -0.005em;
+    color: $trip-widget-gray;
+  }
+
+  &__date {
+    border-right: 1px solid $trip-widget-gray;
+    padding-left: 0;
+  }
+
+  &__icons {
+    @include flex-align-center;
+    margin-bottom: 1.5rem;
+    gap: 0 1.2rem;
+  }
+
+  &__info {
+    @include flex-between-center;
+  }
+
+  &__participants {
+    @include flex-align-center;
+    gap: 0 0.75rem;
+
+    & > span {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1.375rem;
+      letter-spacing: -0.02em;
+      color: $trip-widget-gray;
+    }
+  }
+
+  &__ongoing {
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    display: flex;
+    align-items: flex-start;
+    gap: 0 0.75rem;
+    width: 263px;
+    height: 129px;
+    padding: 1.25rem;
+    background: #fff;
+    box-shadow: $main-box-shadow;
+    border-radius: 18px;
+
+    .ongoing-content {
+      .status,
+      .title,
+      .completed {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1.0625rem;
+        letter-spacing: -0.035em;
+        color: $trip-widget-black;
+      }
+
+      .status {
+        margin-bottom: 0.625rem;
+        color: $trip-widget-gray;
+      }
+
+      .title {
+        margin-bottom: 1rem;
+        font-size: 1.125rem;
+        line-height: 1.375rem;
+        letter-spacing: -0.015em;
+      }
+
+      .completed {
+        letter-spacing: -0.055em;
+
+        .progress {
+          color: #8a79df;
+        }
+      }
+    }
+
+    @media (max-width: 512px) {
+      & {
+        display: none;
+      }
+    }
+  }
+}

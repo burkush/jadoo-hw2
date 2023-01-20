@@ -1,0 +1,33 @@
+html {
+  font-size: 16px;
+  height: -webkit-fill-available;
+
+  @media (max-width: 768px) {
+    & {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    & {
+      font-size: 12px;
+    }
+  }
+}
+
+body {
+  min-height: 100vh;
+  background: url('../../assets/images/decor/background-decor.png') no-repeat
+    top right;
+}
+
+::selection {
+  background-color: $main-text-color;
+  color: #fff;
+}
+
+.container {
+  max-width: 1215px;
+  padding: 0 10px;
+  margin: 0 auto;
+}

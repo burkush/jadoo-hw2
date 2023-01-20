@@ -1,0 +1,174 @@
+.hero {
+  margin-bottom: $section-margin-bottom;
+  background: url('../../assets/images/icons/plane.svg') no-repeat 90% 20%;
+
+  &__airplane {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    z-index: 1;
+
+    &:hover {
+      animation: fly 3s linear 100ms 1;
+    }
+  }
+
+  &__container {
+    @include flex-justify-between;
+  }
+
+  &__content {
+    padding-top: 94px;
+
+    .hero__title {
+      margin-bottom: 35px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 1.25rem;
+      line-height: 1.875rem;
+      text-transform: uppercase;
+      color: $dark-orange;
+    }
+
+    .hero__subtitle {
+      margin-bottom: 55px;
+      font-family: 'Volkhov', serif;
+      font-weight: 700;
+      font-size: 5.25rem;
+      line-height: 5.5625rem;
+      letter-spacing: -0.04em;
+      color: $heading-color;
+    }
+
+    .hero__text {
+      margin-bottom: 35px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 188%;
+      color: $purple;
+    }
+
+    .hero__links {
+      @include flex-align-center;
+      gap: 0 2.75rem;
+
+      .hero__play-demo {
+        @include flex-align-center;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 1.0625rem;
+        line-height: 1.625rem;
+        color: $light-gray;
+        transition: opacity 200ms ease-in-out;
+
+        &:hover {
+          opacity: 0.85;
+        }
+
+        .hero__play-btn {
+          @include flex-center;
+          margin-right: 1.25rem;
+          padding: 1.125rem;
+          border-radius: 50%;
+          background-color: $dark-orange;
+          box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+
+          img {
+            margin-left: 4px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1050px) {
+    & {
+      background: none;
+    }
+
+    &__container {
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 3rem 0;
+    }
+
+    &__airplane {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__image {
+      display: none;
+    }
+  }
+
+  @media (max-width: 576px) {
+    &__content {
+      padding-top: 34px;
+    }
+
+    &__text {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@keyframes fly {
+  0% {
+    translate: 0;
+    rotate: 0;
+  }
+
+  10% {
+    translate: 30% -50%;
+    rotate: -20deg;
+  }
+
+  20% {
+    translate: 60% -100%;
+    rotate: -40deg;
+  }
+
+  30% {
+    translate: 70% -150%;
+    rotate: -50deg;
+  }
+
+  40% {
+    translate: 70% -200%;
+    rotate: -60deg;
+  }
+
+  50% {
+    translate: 70% -300%;
+    rotate: -70deg;
+  }
+
+  60% {
+    translate: -250% -200%;
+    rotate: 150deg;
+  }
+
+  70% {
+    translate: -200% -150%;
+    rotate: 120deg;
+  }
+
+  80% {
+    translate: -150% -100%;
+    rotate: 80deg;
+  }
+
+  90% {
+    translate: -100% -50%;
+    rotate: 60deg;
+  }
+
+  100% {
+    translate: 0;
+    rotate: 0;
+  }
+}

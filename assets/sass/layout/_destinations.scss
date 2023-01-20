@@ -1,0 +1,31 @@
+.destinations {
+  margin-bottom: $section-margin-bottom;
+
+  &__header {
+    margin-bottom: 5.125rem;
+    text-align: center;
+  }
+
+  &__title {
+    @include section-title;
+  }
+
+  &__subtitle {
+    @include section-subtitle;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem 4rem;
+    background: url('../../assets/images/decor/spiral.svg') no-repeat 100% 80%;
+  }
+
+  @media (max-width: 768px) {
+    &__cards {
+      flex-direction: column;
+      align-items: center;
+      background: none;
+    }
+  }
+}
